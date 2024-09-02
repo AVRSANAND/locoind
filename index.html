@@ -1,21 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>LocoIND</title>
-    </head>
-    <body>
-        <header>
-            <nav></nav>
-            <h2>
-                LocoIND - A local Indian Brand for Developing Software for local
-                brands in India.
-            </h2>
-        </header>
-        <main>
-            <section></section>
-        </main>
-        <footer></footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocoIND - Empowering Local Indian Businesses</title>
+    <style>
+        /* Base styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100vh;
+            
+            background: url('https://images.unsplash.com/photo-1496372412473-e8548ffd82bc?q=80&w=3228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            animation: fadeIn 3s ease-in;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffda44;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #ffda44;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature-item {
+            flex: 1;
+            padding: 20px;
+            max-width: 300px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .footer {
+            background: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div>
+            <h1>LocoIND - Empowering Local Indian Businesses</h1>
+            <p>Your one-stop solution for delivery, inventory, e-payments, and more!</p>
+            <a href="#services" class="cta-button">Explore Now</a>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h3>Delivery Systems</h3>
+                <p>Seamless delivery systems tailored to meet your local business needs.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Inventory Management</h3>
+                <p>Smart inventory systems to track your products efficiently and reduce waste.</p>
+            </div>
+            <div class="feature-item">
+                <h3>E-Payment Solutions</h3>
+                <p>Secure and fast e-payment solutions, enabling smoother transactions.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Mobile & Web Apps</h3>
+                <p>Custom-built mobile and web applications to help you connect with your customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About LocoIND</h2>
+        <p>LocoIND is dedicated to providing local Indian businesses with the tools they need to thrive in today’s competitive market. From state-of-the-art delivery systems to seamless mobile applications, we offer a comprehensive suite of services to boost efficiency and customer satisfaction.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Interested in our services? Get in touch with us at <strong>support@locoind.com</strong> or call us at <strong>+91-123-4567890</strong></p>
+        <a href="mailto:support@locoind.com" class="cta-button">Send Us a Message</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 LocoIND. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
